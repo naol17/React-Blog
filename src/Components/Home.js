@@ -1,10 +1,10 @@
 import React from 'react'
 import BlogList from './BlogList'
-import useFeatch from './useFeatch'
+import useFetch from './useFeatch'
 
 const Home = ()=> {
 
-    const{data:blogs, isPending, error}= useFeatch('http://localhost:8000/')
+    const{data:blogs, isPending, error}= useFetch('http://localhost:8000/')
 
   return (
     <div className='home'>Home
